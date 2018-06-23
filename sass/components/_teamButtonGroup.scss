@@ -1,0 +1,12 @@
+@import '../variables';
+
+.team-button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  & > *{
+    margin: 0 15px;
+    box-shadow: $box-shadow;
+  }
+}

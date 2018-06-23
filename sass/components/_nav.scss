@@ -1,8 +1,40 @@
+@import '../variables';
+
 nav {
-  background-color: #756789;
+  background-color: $lightgray;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: $box-shadow;
+  // ul, .brand-logo {
+  //   padding: 0 20px;
+  //   line-height: 56px;
+  //   height: 56px;
+  // }
+
+
+  //denotes the direct children ofthe element you are in
+  & > * {
+      padding: 0 20px;
+      line-height: 56px;
+      height: 56px;
+  }
+  //denotes the next sibling of the element you are in
+  & + * {
+    margin-top: 76px;
+  }
+
+  ul {
+    list-style-type: none;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+  }
 }
