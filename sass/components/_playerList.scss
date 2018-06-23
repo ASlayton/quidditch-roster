@@ -1,7 +1,12 @@
+@import '../variables';
+
+%player-card {
+  @include default-font(.8em);
+}
+
 .player-list{
   list-style: none;
   display: flex;
-  // flex-direction: row;
-  // flex-wrap: wrap;
   flex-flow: row wrap;
+  justify-content: center;
 }

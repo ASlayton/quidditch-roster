@@ -1,0 +1,58 @@
+@import '../variables';
+
+%player-card {
+  @include default-font(20px);
+  width: 18%;
+  background-color: $gold;
+  margin: 1%;
+  box-shadow: $box-shadow;
+
+  .img-holder {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+  }
+
+  img {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  h3,h5 {
+    @include default-font(20px);
+    margin: 5px;
+  }
+}
+
+.player-team-slytherin {
+  @extend %player-card;
+  h3 {
+    color: $slytherin;
+  }
+}
+
+.player-team-gryffindor {
+  @extend %player-card;
+  h3 {
+    color: $gryffindor;
+  }
+}
+
+.player-team-ravenclaw {
+  @extend %player-card;
+  h3 {
+    color: $ravenclaw;
+  }
+}
+
+.player-team-hufflepuff {
+  @extend %player-card;
+  h3 {
+    color: $hufflepuff;
+  }
+}
